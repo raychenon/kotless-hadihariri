@@ -2,8 +2,8 @@ import io.kotless.plugin.gradle.dsl.kotless
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmCompile
 
 plugins {
-    kotlin("jvm") version "1.3.61" apply true
-    id("io.kotless") version "0.1.6" apply true
+    kotlin("jvm") version "1.3.61"
+    id("io.kotless") version "0.1.6"
 }
 
 group = "me.raychenon"
@@ -29,10 +29,10 @@ tasks.withType<KotlinJvmCompile> {
 
 kotless {
     config {
-        bucket = "ray.kotless.bucket"
+        bucket = "jm.kotless.bucket"
 
         terraform {
-            profile = "my.kotless.user"
+            profile = "jm.kotless.user"
             region = "eu-west-1"
         }
     }
